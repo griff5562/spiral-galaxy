@@ -1,17 +1,34 @@
 # Spiral Galaxy
 
-See your vault as a slowly spinning spiral galaxy.
+See your Obsidian vault as a slowly spinning spiral galaxy.
 
-![Spiral Galaxy](galaxy.jpg)
+## ⬇️ [Download Spiral Galaxy](https://github.com/griff5562/spiral-galaxy/releases/latest/download/spiral-galaxy.zip)
+
+## How to put it in your Obsidian
+
+1. **Download** the zip with the link above, then **unzip** it (right-click → Extract All). You get a folder called `spiral-galaxy`.
+2. **Find your vault's plugins folder.**
+   - Open your vault folder (the folder with your notes in it).
+   - Go into the `.obsidian` folder, then `plugins`. If there's no `plugins` folder, make one.
+   - Can't see `.obsidian`? It's hidden.
+     - Windows: in File Explorer, **View → Show → Hidden items**.
+     - Mac: press **Cmd + Shift + .** in Finder.
+   - Shortcut: in Obsidian, go to **Settings → Community plugins** and press the 📁 folder icon. It opens the plugins folder for you.
+3. **Move the `spiral-galaxy` folder into `plugins`.** You should end up with `.obsidian/plugins/spiral-galaxy/main.js`.
+4. **Turn it on in Obsidian.**
+   - Go to **Settings → Community plugins**.
+   - If it says Restricted mode is on, press **Turn on community plugins**.
+   - Press the 🔄 refresh button next to "Installed plugins", then switch on **Spiral Galaxy**.
+5. **Open it:** click the ✨ **sparkles** button on the left edge of Obsidian.
+
+That's it!
+
+## What it does
 
 - **Every note is a star.** Notes with more links are bigger stars.
 - **Every arm is a group of folders**, each in its own colour. Every folder is a glowing star cluster along its arm, with its hub note (Start Here, README, Index, Hub, MOC, Overview, or its most-linked note) in the middle.
 - **Your top-level notes are the bright core.** The centre note (e.g. `Home.md`) sits in the very middle.
 - **"Moon" folders** (references, archives, …) become a little satellite galaxy.
-
-## Using it
-
-Open it with the ✨ **sparkles** button in the ribbon, or the command **Spiral Galaxy: Open galaxy**.
 
 | Do | What happens |
 |---|---|
@@ -24,6 +41,8 @@ Open it with the ✨ **sparkles** button in the ribbon, or the command **Spiral 
 
 ## Settings
 
+Find them in **Settings → Spiral Galaxy**.
+
 - **Arms:** by default the arms are picked automatically from your folders. Every top-level folder becomes a star cluster; if one folder holds most of your vault, its subfolders are used instead. Press **Fill in from my folders** to edit them: name, colour and folders for each arm. Arms can be added, removed and moved.
 - **Core:** which folders' loose notes form the bright core ("/" is the vault root), its name and colours, and the centre note.
 - **Moon:** folders that become the satellite galaxy, and its name and colour.
@@ -33,15 +52,11 @@ Star positions are seeded from each note's path, so your galaxy looks the same e
 
 ## Performance
 
-The glowing nebulae, the space dust and the core glow are painted once into a single backdrop picture that is only turned and scaled as the galaxy spins. Every star is one pre-made sprite, and the view only redraws while something moves. A redraw takes about 1 ms for a vault of around 900 notes.
+The glowing nebulae, the space dust and the core glow are painted once into a single backdrop picture that is only turned and scaled as the galaxy spins. Every star is one pre-made sprite, and the view only redraws while something moves.
 
 ## Privacy
 
 Everything happens inside Obsidian. The plugin makes no network requests and only reads your notes' paths and links.
-
-## Installing by hand
-
-Copy `main.js`, `manifest.json` and `styles.css` from the latest release into `<your vault>/.obsidian/plugins/spiral-galaxy/`, then turn on **Spiral Galaxy** in Settings → Community plugins.
 
 ## Licence
 
